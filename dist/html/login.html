@@ -14,7 +14,7 @@
         _this.prop('disable',true).html('登陆中...');
         $("erro1").html("");
         $.ajax({
-            url: 'http://localhost:80/denglu.php',
+            url: '../denglu.php',
             type: 'post',
             data: {
                 "username": username,

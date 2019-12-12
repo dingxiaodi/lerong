@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>购物车</title><link rel=stylesheet href=../css/reset.css><link rel=stylesheet href=../css/car.css></head><body><div class=toubu><div class=toubu-top><div class=min><div class=min-right><ul><li>个人中心</li><li>合作渠道</li><li>帮助中心</li></ul></div></div></div><div class=toubu-bottom><div class=xmin><div class=toubu-logo><a href=./index.html></a></div><p>我的购物车</p></div></div></div><div class=carlist><div class=carlist-top><div class=carlist-top-left><div class=a>全部商品</div></div></div><div class=carlist-min><div class=dev><div class=quanxuan><span>全选</span></div><div class=shangpin><span>商品</span></div><div class=danjian><span>单价（元）</span></div><div class=shuliang><span>数量</span></div><div class=xiaoji><span>小计（元）</span></div><div class=caozuo><span>操作</span></div></div></div><div id=xuanran></div><div class=carlist-bot><div class=zong><div class=right><span class=text>总计（不含运费）：</span> <span class=text1><font>￥</font><p class=zonghe></p></span> <button>结算</button></div></div></div></div></body><script src=../js/car.js></script><script>
-var car =new Car();
-var carlist = car.getCar();
-var str = ``;
-// var arr = [];
-for(var i = 0;i<carlist.length;i++){
+      var car =new Car();
+      var carlist = car.getCar();
+      var str = ``;
+      // var arr = [];
+      for(var i = 0;i<carlist.length;i++){
   str += `
   <div class="xuanran">
      <div class="xuanran-top">
