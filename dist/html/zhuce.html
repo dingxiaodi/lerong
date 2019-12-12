@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>注册</title><link rel=stylesheet href=../css/zhuce.css><link rel=stylesheet href=../css/reset.css></head><body><div class=logo><div class=logo-min><img src=//i3.letvimg.com/lc03_user/201905/21/11/21/155840875152248.png></div></div><div class=banner><div class=zhuce><div class=zhuce-min><p class=zhuce-title>注册</p><p class=jiance style="display: none;"></p><div class=zhuce-bottom><ul><span class=erro style="font-size: 16px;margin-bottom: 6px;"></span><li><i class="icon IconPeople"></i> <input type=text placeholder=用户名 class=username></li><li><i class="icon IconPeople"></i> <input type=password placeholder=密码 class=password></li><li><i class="icon IconPeople"></i> <input type=text placeholder=验证码></li></ul><button class=btn>注 册</button></div></div></div></div></body><script src=../js/jquery1.12.4.js></script><script>
+    
+    $(".btn").click(function() {
+        var username = $(".username").val();
+        var password = $(".password").val();
+        
+        if ($.trim(username) == "" || $.trim(password) == "") {
+            $(".erro")
+                .html("用户名密码不能为空")
+                .css("color", "red");
+            return;
+        }
+      
+        $("erro").html("");
+        $.ajax({
+            url: 'http://localhost:80/zhuce.php',
+            type: 'post',
+            data: {
+                "username": username,
+                "password": password
+            },
+            success: function(res) {
+                console.log(res)
+                if(res.code == 200){
+                    alert(res.message);
+                    window.location.href = 'login.html';
+                }else{
+                    $('.erro').html('注册失败').css('color','red')
+                }
+            },
+            dataType: 'json',
+        })
+    })
+</script></html>

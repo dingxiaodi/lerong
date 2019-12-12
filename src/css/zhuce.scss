@@ -1,0 +1,89 @@
+.logo {
+  width: 1519px;
+  height: 91px;
+  .logo-min {
+    width: 1440px;
+    height: 91px;
+    margin: 0 auto;
+    img {
+      display: block;
+      float: left;
+      width: 162px;
+      height: 47px;
+      padding-top: 25px;
+      padding-left: 40px;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 483px;
+  background-image: url(//i1.letvimg.com/lc07_img/201607/29/15/13/operatbg.jpg);
+  position: relative;
+}
+.zhuce {
+  width: 430px;
+  height: 460px;
+  background: #ffffff;
+  position: absolute;
+  top: 12px;
+  left: 1011px;
+  .zhuce-min {
+    width: 380px;
+    height: 367px;
+    margin: 0 auto;
+    .zhuce-title {
+      width: 380px;
+      padding: 8px 0;
+      margin-top: 11px;
+      font-size: 18px;
+      color: #333;
+    }
+    .jiance {
+      width: 380px;
+      height: 23px;
+    }
+    .zhuce-bottom {
+      ul {
+        width: 380px;
+        height: 250px;
+        margin-top: 10px;
+        li {
+          height: 42px;
+          line-height: 42px;
+          border: 1px solid #ccc;
+          margin-bottom: 25px;
+          i{
+            background: -webkit-image-set(url(//i3.letvimg.com/lc05_img/201611/23/12/08/icon/icon1x.png) 1x,url(//i0.letvimg.com/lc05_img/201611/23/12/08/icon/icon2x.png) 2x) 0 5px;
+            background-repeat: no-repeat;
+            display:block;
+            float: left;
+            width: 25px;
+            height: 29px;
+            margin: 6px 0 0 14px;
+          }
+          input {
+            height: 23px;
+            line-height: 23px;
+            border: none;
+            color: #333;
+            width: 270px;
+            font-size: 14px;
+            padding: 9px 0 10px;
+          }
+        }
+      }
+      .btn {
+        border: 2px solid #009de6;
+        background: #009de6;
+        height: 38px;
+        width: 380px;
+        line-height: 38px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+}

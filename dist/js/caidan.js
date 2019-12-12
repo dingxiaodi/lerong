@@ -1,0 +1,1 @@
+var dist=[];function createCai(i){dist.map(function(i,s){$(".side_main ul").append("<li><div class='img1'><img src = "+i.img+"></div><div class='box'><div class='p000'>"+i.title+"</div><div class='p100'>"+i.price+"</div></div></li>")})}$.ajax({type:"GET",url:"../caidan.json",dataType:"json",success:function(i){console.log(i),createCai(dist=i)}});
